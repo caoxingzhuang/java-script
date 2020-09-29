@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //函数是做某件事或者实现某种功能
+        // return 返回值  需要返回的结果
+        //return 后面是什么  那么函数返回的就是什么
+        // return 后面什么都没跟  那么该函数返回undefined
+        function num(a) {
+            return a;
+        }
+        console.log(num('湖人'));
+        //求任意两个数的和
+        function sum(num, num1) {
+            return num + num1;
+        }
+        console.log(sum(2, 2));
+        //两个数最大值
+        function getMax(a, b) {
+            return a > b ? a : b;
+        }
+        console.log(getMax(20, 10));
+        //三个值
+        function getMaxer(a, b, c) {
+            // var max = getMax(a, b);
+            // var maxer = getMax(max, c);
+            // return maxer;
+            return getMax(getMax(a, b), c);
+        }
+        var num = getMaxer(2, 6, 59);
+        console.log(num);
+        //排序
+        var newArr = [2000, 1567, 1333, 4000, 1000, 2050, 1235, 1029];
+        function getMax(arr) {
+            for (var i = 0; i < arr.length; i++) {
+                if (arr.length < 2000) {
+
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

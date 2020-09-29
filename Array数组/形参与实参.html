@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //形参 形式上的参数 局部变量
+        // function add(x, y) {
+        //     console.log(x + y);
+        // }
+        //实参  实际传进去的值
+        // add(2, 1);
+        function getSum(x, y) {
+            var sum = 0;
+            for (var i = x; i <= y; i++) {
+                sum += i;
+            }
+            console.log(sum);
+        }
+        getSum(1, 100);
+        getSum(1, 200);
+        getSum(1, 300);
+        getSum(1, 400);
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

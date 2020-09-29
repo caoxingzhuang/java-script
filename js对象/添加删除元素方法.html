@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //push() 可以在数组的末尾添加一个或者多个元素
+        //可以给数组追加新的元素 push()参数直接写 数组元素就可以
+        //push完毕之后 返回的结果是新数组的长度
+        //原数组也会发生变化
+        var arr = [1, 2, 3];
+        // arr.push(4, 5, '湖人');
+        console.log(arr.push(4, 5, '湖人'));
+        console.log(arr);
+        //unshift  在数组的开头添加
+        //其他特点同上
+        // arr.unshift('篮网', '雄鹿');
+        console.log(arr.unshift('篮网', '雄鹿'));
+        console.log(arr);
+        //删除数组
+        //pop 删除数组的最后一个元素
+        console.log(arr.pop());
+        //返回删除掉的元素
+        console.log(arr);
+        //shift 删除数组的第一个
+        console.log(arr.shift());
+        //返回删除掉的元素
+        console.log(arr);
+
+        //----------------
+        //案例
+        // var arr = [1500, 1200, 1900, 2100, 1800];
+        // var newArr = [];
+        // for (var i = 0; i < arr.length; i++) {
+        //     if (arr[i] < 2000) {
+        //         // newArr[newArr.length] = arr[i];
+        //         newArr.push(arr[i]);
+        //     }
+        // }
+        // console.log(newArr);
+        //案例2
+        var arr1 = ['a', 'b', 'c', 'd'];
+        var newArr = [];
+        for (var i = 0; i < arr1.length; i++) {
+            newArr.unshift(arr1[i]);
+        }
+        console.log(newArr);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

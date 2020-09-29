@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // var obj = {
+        //     name: '小明',
+        //     age: '18',
+        // }
+        // for (var k in obj) {
+        //     //console.log(k);//属性名
+        //     console.log(obj[k]);
+        // }
+        function Dog(name, colors) {
+            this.name = name;
+            this.colors = colors;
+            this.eat = function () {
+                console.log(this.name + '啃骨头');
+            }
+        }
+        var xh = new Dog('小黑', '黑色');
+        // console.log(xh);
+        for (var k in xh) {
+            console.log(xh[k]);
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

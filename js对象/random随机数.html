@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //random 返回一个随机小数   这个方法里面不跟参数
+        console.log(Math.random());
+        function getRandom(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+        var num = getRandom(20, 50);
+        console.log(num);
+
+
+        var arr = ['勒布朗', '戴维斯', '利拉德', '库兹马', '丹尼格林', '波普'];
+        console.log(arr[getRandom(0, arr.length - 1)]);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

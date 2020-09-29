@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //在全局当中this指的是window
+        console.log(this);
+
+
+        function fun() {
+            //在函数中 this还是指向 window
+            console.log(this);
+        }
+
+        var obj = {
+            name: '张灿',
+            fun: function () {
+                // 在对象中 this指向所属对象
+                console.log(this);
+            }
+        }
+        obj.run();
+
+        //构造函数 this 指的是有构造函数所创建出来的实例对象
+        function Con(name, age) {
+            this.name = name;
+            this.age = age;
+            this.eat = function () {
+                console.log(this);
+            }
+        }
+        var ls = new Con('李四', 15, '男');
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //翻转数组
+        function reverse(arr) {
+            var newArr = [];
+            for (var i = arr.length - 1; i >= 0; i--) {
+                newArr[newArr.length] = arr[i];
+            }
+            return newArr;
+        }
+
+
+        var arr1 = reverse([1, 2, 3, 4, 5]);
+        console.log(arr1);
+        var arr2 = reverse(['宝马', '奔驰', '奥迪', '长安', '红旗']);
+        console.log(arr2);
+        //利用函数判断闰年
+        function isRun(year) {
+            var flag = false;//假设不是闰年
+            if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+                var flag = true;//闰年
+            }
+            return flag;
+        }
+        console.log(isRun(1999));
+        //判断2月份多少天
+        function mark(year) {
+            if (isRun(year)) {
+                alert(year + '2月份是29天');
+            } else {
+                alert(year + '2月份是28天');
+            }
+        }
+        mark(2009);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

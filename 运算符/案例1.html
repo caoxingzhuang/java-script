@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // var num = prompt('输入一个三位数');
+        // var g = num % 10;
+        // var s = parseInt(num / 10) % 10;
+        // var b = parseInt(num / 100);
+        // var sum = g + s + b;
+        // alert('值的和' + num + '为' + sum); 
+        // var num = prompt('请问现在几点了');
+        // if (num <= 5) {
+        //     alert('这是休息时间');
+        // } else if (num <= 12) {
+        //     alert('上午好');
+        // } else if (num <= 18) {
+        //     alert('下午好');
+        // } else if (num <= 23) {
+        //     alert('晚上好');
+        // }
+        var num = prompt('班长请吃饭');
+        // if (num <= 1000 && num >= 500) {
+        //     alert('请大家吃棒棒糖');
+        // } else if (num <= 1500 && num >= 1000) {
+        //     alert('请大家喝饮料');
+        // } else if (num <= 2000 && num >= 1500) {
+        //     alert('请大家吃快餐');
+        // } else if (num >= 2000) {
+        //     alert('请大家吃西餐');
+        // } else if (num <= 500) {
+        //     alert('回家拿钱');
+        // }
+        switch (true) {
+            case num >= 2000:
+                alert('请大家吃西餐');
+                break;
+            case num <= 2000 && num >= 1500:
+                alert('请大家吃快餐');
+                break;
+            case num <= 1500 && num >= 1000:
+                alert('请大家喝饮料');
+                break;
+            case num <= 1000 && num >= 500:
+                alert('请大家吃棒棒糖');
+                break;
+            default:
+                alert('班长下次把钱拿起');
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

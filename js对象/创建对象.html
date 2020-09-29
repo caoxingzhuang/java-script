@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //利用{}创建
+        var obj = {} //创建了一个空的
+
+        // 里面的属性或者方法采取键值对的形式 属性名：值
+        // 多个属性用 逗号 隔开
+        // 方法冒号后面跟的是一个匿名函数
+        // 
+        var obj = {
+            uname: '张三丰',
+            age: 18,
+            sex: '男',
+            sayHi: function () {
+                console.log('hi...');
+            }
+        }
+        //1.调用属性 采取对象名 属性名
+        console.log(obj.uname);
+        //2 调用属性第二种 对象名['属性名']
+        console.log(obj['age']);
+        //第三种  sayHi   对象名（）
+        obj.sayHi();
+        //案例
+        var dog = {
+            // 名词  属性
+            name: '大黄',
+            age: '2.5',
+            color: '黑白',
+            type: '土狗',
+            // 动词 方法
+            brak: function () {
+                console.log('旺旺');
+            },
+            eat: function () {
+                console.log('啃骨头');
+            }
+        };
+        console.log(dog);
+        console.log(dog.name);
+        console.log(dog.age);
+        console.log(dog.color);
+        console.log(dog.type);
+        dog.brak();
+        dog['eat']();
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

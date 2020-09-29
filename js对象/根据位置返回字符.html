@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // var arr = 'sldfjj';
+        // console.log(arr.charAt(3));
+        // for (var i = 0; i < arr.length; i++) {
+        //     console.log(arr.charAt(i));
+        // }
+
+        // console.log(arr[4]);
+        //案例 统计出现最多的字符和次数
+        /*核心算法 利用charAt（）遍历这个字符串
+        把每个字符都存储给对象，如果对象没有该属性
+        就为1 如果存在就+1 遍历对象 得到最大值和该字符*/
+        var arr = 'ofhsdojsogjdoj';
+        var o = {};
+        for (var i = 0; i < arr.length; i++) {
+            var chars = arr.charAt(i);//chars 是字符串的每个字符
+            if (o[chars]) {//o[chars] 得到的属性值
+                o[chars]++;
+            } else {
+                o[chars] = 1;
+            }
+        }
+        console.log(o);
+        var max = 0;
+        var ch = '';
+        for (k in o) {
+            //k得到是属性名
+            // o[k]得到的是属性值
+            if (o[k] > max) {
+                max = o[k];
+                ch = k;
+            }
+        }
+        console.log(max);
+        console.log('最多的字符是' + ch);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

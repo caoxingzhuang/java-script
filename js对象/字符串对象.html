@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //基本包装类型；就是把简单数据类型包装成为了 复杂数据类型
+        //查找字符串的位置及出现的次数
+        var arr = ['宝马', '奔驰', '宝马', '奥迪', '宝马', '长安',];
+        var index = -1;
+        var num = 0;
+        do {
+            index = arr.indexOf('宝马', index + 1);
+            if (index != -1) {
+                console.log(index);
+                num++;
+            }
+        } while (index != -1);
+        console.log('出现的次数是' + num);
+        // var arr1 = arr.substr(2, 2);
+        // console.log(arr1);
+        console.log('--------------------');
+        var arr1 = ['宝马', '奔驰', '宝马', '奥迪', '宝马', '长安',];
+        var index1 = arr1.indexOf('宝马');
+        var num1 = 0;
+        while (index1 != -1) {
+            console.log(index1);
+            num1++;
+            index1 = arr1.indexOf('宝马', index1 + 1);
+        }
+        console.log('出现的次数是' + num1);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

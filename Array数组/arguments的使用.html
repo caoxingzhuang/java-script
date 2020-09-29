@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //存储了传递的所有实参
+        //伪数组  并不是真正意义上的数组
+        //具有数组的length属性
+        // 按照索引的方式进行存储
+        // 他没有真正数组的一些方法
+        function fn() {
+            console.log(arguments);
+            console.log(arguments.length);
+            // 我们可以使用按照数组的方式遍历arguments
+            for (var i = 0; i < arguments.length; i++) {
+                console.log(arguments[i]);
+            }
+
+        }
+        fn(1, 2, 3, 4, 5)
+        // 求最大值
+        function max() {
+            var maxer = arguments[0];
+            for (var i = 1; i < arguments.length; i++) {
+                if (arguments[i] > maxer) {
+                    maxer = arguments[i];
+                }
+            }
+            return maxer;
+        }
+        console.log(max(2, 5, 8));
+        console.log(max(2, 5, 10));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

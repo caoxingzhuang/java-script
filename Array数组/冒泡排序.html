@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var arr = [5, 4, 3, 2, 1];
+        //外层循环  控制比较躺数
+        for (var i = 0; i < arr.length - 1; i++) {
+            //内层循环 控制比较次数
+            for (j = 0; j < arr.length - 1 - i; j++) {
+                //判断大小
+                if (arr[j] > arr[j + 1]) {
+                    //交换数值
+                    var temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                    // flag = false;
+                }
+            }
+        }
+        console.log(arr);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
